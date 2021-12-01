@@ -15,7 +15,7 @@ pipeline {
 	}	
 	post {
 		success {
-			echo "hihi"
+			dependencyCheckPublisher pattern: 'dependency-check-report.xml'
 		}
 	}
 }
